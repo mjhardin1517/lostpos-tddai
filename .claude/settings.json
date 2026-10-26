@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run test:unit)",
+      "Bash(npm run test:e2e)",
+      "Edit(./app/**)",
+      "Edit(./components/**)",
+      "Edit(./lib/**)"
+    ],
+    "deny": [
+      "Read(./tests/**)",
+      "Edit(./tests/**)",
+      "Write(./tests/**)",
+      "Edit(./vitest.config.*)",
+      "Write(./vitest.config.*)",
+      "Edit(./playwright.config.*)",
+      "Write(./playwright.config.*)",
+      "Edit(./package.json)",
+      "Edit(./CLAUDE.md)",
+      "Edit(./AGENTS.md)",
+      "Edit(./.claude/**)",
+      "Write(./.claude/**)",
+      "Bash(*tests*)",
+      "Bash(*vitest*)",
+      "Bash(*playwright*)",
+      "Bash(npx *)",
+      "Bash(git log*)",
+      "Bash(git show*)",
+      "Bash(git diff*)",
+      "Bash(git blame*)",
+      "Bash(git cat-file*)",
+      "Bash(git grep*)"
+    ]
+  }
+}
